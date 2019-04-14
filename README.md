@@ -5,6 +5,9 @@ Usage: location2ip -i file -c country
 
 Please view sample:
 
+$ cat country.lst | grep "VU"
+"VU","Vanuatu"
+
 $ ~/Library/jdk-12/bin/java -Dfile.encoding=UTF-8 -classpath /home/c0re/IdeaProjects/location2ip/out/production/location2ip Main -i IP2LOCATION-LITE-DB1.CSV -c VU
 
 File: IP2LOCATION-LITE-DB1.CSV
