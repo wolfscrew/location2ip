@@ -1,15 +1,20 @@
 # location2ip
-Get ip address subnet from location. For search name of location please use file country.lst
 
-Usage: location2ip -i file -c country
+**location2ip** Get ip address subnet from IP2LOCATION file. For search name of location please use file country.lst
 
-Please view sample:
 
+### Usage: 
+
+```location2ip -i IP2LOCATION-LITE-DB1.CSV -c country```
+
+### Sample:
+
+```
 $ cat country.lst | grep "VU"
 
 "VU","Vanuatu"
 
-$ ~/Library/jdk-12/bin/java -Dfile.encoding=UTF-8 -classpath /home/c0re/IdeaProjects/location2ip/out/production/location2ip Main -i IP2LOCATION-LITE-DB1.CSV -c VU
+$ ~/Library/jdk-12/bin/java -Dfile.encoding=UTF-8 -classpath /home/c0re/IdeaProjects/location2ip/out/production/location2ip Main -i c -c VU
 
 File: IP2LOCATION-LITE-DB1.CSV
 
@@ -30,4 +35,4 @@ Country: VU
 ......
 
 --------- CUT HERE ---------
-
+```
